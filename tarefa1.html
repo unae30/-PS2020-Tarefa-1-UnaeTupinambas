@@ -14,7 +14,7 @@
 
 var Universidade= {
         nome: 'UFOP',
-        cursos: 'Engenharia da Computação',
+        cursos: ['Engenharia da Computação', 'Sistemas de Informação', 'Engenharia de Produção', 'Engenharia Elétrica'],
         tempoDeCurso: 10,
         cargaHoraria: 3630,
     }
@@ -29,14 +29,14 @@ var Universidade= {
     var Pessoa1= {
         nome: 'Pedro',
         idade: 20,
-        faculade: Universidade.cursos,
+        faculade: Universidade.cursos[0],
         republica: '',
     }
 
     var Pessoa2= {
         nome: 'Ana',
         idade: 17,
-        faculade: Universidade.cursos,
+        faculade: Universidade.cursos[0],
         republica: '',
     }
     
@@ -88,23 +88,3 @@ var Universidade= {
     
 </body>
 </html>>
-
-
-<!-- 4 amigos entram em um bar e pedem 2 cervejas. Pedro e Ana são irmãos e fazem
-Engenharia da Computação na UFOP. Eles tem 20 e 17 anos respectivamente
-e estavam acompanhados de Paulo de 23 anos e Armando de 17 anos.
-Entretanto, André o garçon do Clube da Cerveja, achou Ana e Armando muito
-novos e pediu suas identidades. Os dois últimos moram na República Orfanato.
-O curso de Engenharia da Computação possue 10 períodos e tem uma carga
-horária total de 3630 horas. A República Orfanato, atualmente, possúi 10 anos
-e 5 moradores.
-
-1 Modele objetos que simulem propriedades de uma Pessoa, uma
-Universidade e uma República.
-
-2 Crie as instâncias encontradas no texto acima.
-
-3 Implemete uma função chamada ‘checarIDs’ que apenas André possa
-executar. A função deve retornar “‘Nome’ pode tomar cerveja”, caso a pessoa
-checada seja maior de idade. Caso a mesma seja menor retornará “‘Nome’ vai
-tomar Coca-Cola” -->
