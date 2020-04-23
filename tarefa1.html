@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tarefa1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+
+    <script> 
+
+var Universidade= {
+        nome: 'UFOP',
+        cursos: 'Engenharia da Computação',
+        tempoDeCurso: 10,
+        cargaHoraria: 3630,
+    }
+    
+    var Republica= {
+        nome: 'Rep. Orfanato',
+        idadeRep: 10,
+        moradores: 5,
+    }
+
+
+    var Pessoa1= {
+        nome: 'Pedro',
+        idade: 20,
+        faculade: Universidade.cursos,
+        republica: '',
+    }
+
+    var Pessoa2= {
+        nome: 'Ana',
+        idade: 17,
+        faculade: Universidade.cursos,
+        republica: '',
+    }
+    
+    var Pessoa3= {
+        nome: 'Paulo',
+        idade: 23,
+        faculade:'',
+        republica: Republica.nome,
+        
+    }
+    
+    var Pessoa4= {
+        nome: 'Armando',
+        idade: 17,
+        faculade: '',
+        republica: Republica.nome,        
+    }
+
+    
+
+    var Pessoa5= {
+        nome: 'Andre',
+        checarIDs: function(Pessoa0){
+            if (Pessoa0.idade<18){
+                return `${Pessoa0.nome} pode tomar cerveja`           
+            }
+            else{
+                return `${Pessoa0.nome} vai tomar COCA COLA` 
+            }
+
+        }
+
+    }
+    
+    console.log(Universidade);
+    console.log(Republica);
+    console.log(Pessoa1);
+    console.log(Pessoa2);
+    console.log(Pessoa3);
+    console.log(Pessoa4);
+    console.log(Pessoa5);
+    console.log(Pessoa5.checarIDs(Pessoa1));
+    console.log(Pessoa5.checarIDs(Pessoa2));
+    console.log(Pessoa5.checarIDs(Pessoa3));
+    console.log(Pessoa5.checarIDs(Pessoa4));
+
+
+    </Script>
+    
+</body>
+</html>>
+
+
+<!-- 4 amigos entram em um bar e pedem 2 cervejas. Pedro e Ana são irmãos e fazem
+Engenharia da Computação na UFOP. Eles tem 20 e 17 anos respectivamente
+e estavam acompanhados de Paulo de 23 anos e Armando de 17 anos.
+Entretanto, André o garçon do Clube da Cerveja, achou Ana e Armando muito
+novos e pediu suas identidades. Os dois últimos moram na República Orfanato.
+O curso de Engenharia da Computação possue 10 períodos e tem uma carga
+horária total de 3630 horas. A República Orfanato, atualmente, possúi 10 anos
+e 5 moradores.
+
+1 Modele objetos que simulem propriedades de uma Pessoa, uma
+Universidade e uma República.
+
+2 Crie as instâncias encontradas no texto acima.
+
+3 Implemete uma função chamada ‘checarIDs’ que apenas André possa
+executar. A função deve retornar “‘Nome’ pode tomar cerveja”, caso a pessoa
+checada seja maior de idade. Caso a mesma seja menor retornará “‘Nome’ vai
+tomar Coca-Cola” -->
